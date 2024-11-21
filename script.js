@@ -19,6 +19,11 @@ const observer = new IntersectionObserver(entries => {
     });
 });
 
+// Toggle hamburger menu
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('open');
+}
+
 particlesJS("particles-js", {
     particles: {
         number: {

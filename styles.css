@@ -57,6 +57,54 @@ header img {
     color: #03a9f4;
 }
 
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    /* Stack profile image and name vertically */
+    .header-left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Hamburger Menu */
+    .nav-links ul {
+        display: none; /* Hide nav links by default */
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 8px;
+        width: 200px;
+        padding: 1rem;
+    }
+
+    .nav-links a {
+        padding: 0.5rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Display the hamburger menu */
+    .nav-links .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger-icon {
+        width: 25px;
+        height: 3px;
+        background: white;
+        margin: 5px 0;
+        transition: 0.3s ease;
+    }
+
+    /* Show the menu when hamburger is clicked */
+    .nav-links.open ul {
+        display: flex;
+    }
+}
+
 /* Additional improvements for card hover effect in dark mode */
 .card.dark-mode:hover, .project-card.dark-mode:hover, .contact-item.dark-mode:hover {
     background: #333; /* Slightly darker background on hover */
