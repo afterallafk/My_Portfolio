@@ -59,10 +59,21 @@ header img {
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
-    /* Stack profile image and name vertically */
+    /* Header layout on mobile */
     .header-left {
-        flex-direction: column;
+        flex-direction: row; /* Align image and name side by side */
         align-items: center;
+        gap: 1rem; /* Add space between image and name */
+    }
+
+    /* Stack profile image and name vertically */
+    .header-left img {
+        width: 60px; /* Reduce size of profile image */
+        height: 60px;
+    }
+
+    .header-name {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
 
     /* Hamburger Menu */
