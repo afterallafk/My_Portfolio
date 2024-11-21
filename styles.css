@@ -1,0 +1,221 @@
+/* General Styles */
+/* Light Mode Background Gradient */
+body {
+    font-family: 'Google Sans', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #51e2f5, #9df9ef, #edf756, #ffa8b6); /* Gradient with provided colors */
+    color: #333;
+    transition: background 0.3s ease;  /* Smooth transition when switching modes */
+}
+
+/* Header Styles */
+header {
+    background: rgba(51, 51, 51, 0.9); /* Translucent header */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px); /* Adds a blur effect for more aesthetic translucency */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.header-name {
+    margin: 0;
+    font-size: 1.8rem; /* Slightly larger name */
+    font-weight: 700;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #03a9f4;
+}
+
+/* Additional improvements for card hover effect in dark mode */
+.card.dark-mode:hover, .project-card.dark-mode:hover, .contact-item.dark-mode:hover {
+    background: #333; /* Slightly darker background on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section with Particles.js */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Ensure particles are behind the text */
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Fallback for browsers without particles.js */
+}
+
+.tagline {
+    position: relative;
+    z-index: 1; /* Ensure text is above particles */
+    text-align: center;
+}
+
+.tagline h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.tagline p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #a0d8ef; /* Accent color for the tagline */
+}
+
+/* Section Styles */
+.section {
+    padding: 3rem 1rem;
+    text-align: center; /* Center-align text and headings */
+    background: transparent; /* Fully transparent background */
+    margin: 1rem 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-in-out;
+}
+
+.section h2 {
+    font-size: 2rem; /* Increased font size */
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.section p {
+    font-size: 1.2rem; /* Adjusted for better readability */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Cards Layout */
+.education-cards, .certifications-cards, .project-grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card, .project-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover, .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Skills List */
+.skills-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background: #ffe5b4;  /* Change the background color to the specified color */
+    color: #333;  /* Ensure text color contrasts well */
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* Contact Section */
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.contact-item p {
+    font-size: 1.1rem;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #0288d1;
+    font-weight: 500;
+}
+
+.contact-item a:hover {
+    color: #03a9f4;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+}
