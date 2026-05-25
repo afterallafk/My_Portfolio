@@ -4,27 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Aditya's About</title>
-    <link rel="icon" href="MyPhoto.jpg" type="image/jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <meta name="description" content="Aditya Pratap Singh — M.Tech student at IIT Jodhpur specializing in Intelligent Communication Systems, 5G, and ML." />
+    <title>Aditya Pratap Singh</title>
+    <link rel="icon" href="MyPhoto.jpg" type="image/jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-left">
-        <img src="MyPhoto.jpg" alt="Aditya Pratap Singh" class="profile-pic" />
-        <h1 class="header-name">Aditya Pratap Singh</h1>
+        <img src="MyPhoto.png" alt="Aditya Pratap Singh" class="profile-pic" />
+        <span class="header-name">Aditya Pratap Singh</span>
       </div>
-      <nav class="nav-links">
-        <div class="hamburger" onclick="toggleMenu()">
+      <nav class="nav-links" id="navMenu">
+        <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
           <div class="hamburger-icon"></div>
           <div class="hamburger-icon"></div>
           <div class="hamburger-icon"></div>
         </div>
         <ul>
-          <li><a href="#about">About Me</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -33,149 +36,249 @@
       </nav>
     </header>
 
-    <!-- Background Animation with Tagline -->
+    <!-- Hero -->
     <section id="intro" class="hero">
       <div id="particles-js"></div>
       <div class="tagline">
-        <h1>Welcome to my Portfolio !</h1>
+        <h1>Engineer. Developer.<br />Builder.</h1>
         <p>"Let's Build Something Incredible Together!"</p>
+        <a href="#about" class="hero-cta">Explore my work</a>
       </div>
     </section>
 
-    <!-- Sections -->
     <main>
+
+      <!-- About -->
       <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>Hi, I’m Aditya Pratap Singh, a passionate engineer and part time developer who loves to develop things listen to musics and eager to solve problems and building impactful projects.</p>
+        <p class="section-label">About Me</p>
+        <h2>Who I am</h2>
+        <div class="about-grid">
+          <div class="about-photo-wrap">
+            <img src="MyPhoto.png" alt="Aditya Pratap Singh" class="about-photo" />
+          </div>
+          <div class="about-text">
+            <p>Hi, I'm Aditya Pratap Singh — a passionate engineer and developer currently working as Senior Project Engineer and have completed my M.Tech in Intelligent Communication System from IIT Jodhpur.</p>
+            <p>I love building impactful projects, exploring 5G networks and ML-driven systems, and occasionally shipping open-source software. When I'm not writing code, you'll find me listening to music or diving into the next engineering challenge.</p>
+            <div class="about-tags">
+              <span class="tag">5G & Beyond</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Wireless Comms</span>
+              <span class="tag">Open Source</span>
+              <span class="tag">Android AOSP</span>
+              <span class="tag">Cloud (AWS/GCP/Azure)</span>
+            </div>
+          </div>
+        </div>
       </section>
 
+      <hr class="section-divider" />
+
+      <!-- Education -->
       <section id="education" class="section">
-        <h2>Education</h2>
+        <p class="section-label">Education</p>
+        <h2>Academic Background</h2>
         <div class="education-cards">
           <div class="card">
-            <h3>Bachelor of Technology</h3>
-            <p><i>Electronics and Communication Engineering</i></p>
-            <p><strong>Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur, UP</strong></p>
-          </div>
-          <div class="card">
+            <i>🎓</i>
             <h3>Master of Technology</h3>
-            <p>Specialized in <i>Intelligent Communication System</i>.</p>
+            <p>Specialized in <em>Intelligent Communication System</em></p>
             <p><strong>Indian Institute of Technology (IIT), Jodhpur, Rajasthan</strong></p>
           </div>
+          <div class="card">
+            <i>🎓</i>
+            <h3>Bachelor of Technology</h3>
+            <p><em>Electronics and Communication Engineering</em></p>
+            <p><strong>Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur, UP</strong></p>
+          </div>
         </div>
       </section>
 
+      <hr class="section-divider" />
+
+      <section id="experience" class="section">
+        <p class="section-label">Experience</p>
+        <h2>Where I've Worked</h2>
+        <div class="education-cards">
+
+          <div class="card">
+            <i>📶5G</i>
+            <h3>Senior Project Engineer</h3>
+            <p style="font-size:0.78rem; color: var(--accent); font-weight:600; margin-bottom:0.4rem;">
+              May 2026 – Ongoing
+            </p>
+            <p><strong>IIT Jodhpur, Rajasthan</strong></p>
+            <p>Deploying Queue-and-Latency-Aware Proportional Fair scheduler in OAI as xApp for testing performance in real 5G network stack for URLLC QoS flows.</p>
+          </div>
+
+          <div class="card">
+            <i>🔬</i>
+            <h3>Graduate Researcher</h3>
+            <p style="font-size:0.78rem; color: var(--accent); font-weight:600; margin-bottom:0.4rem;">
+              May 2025 – April 2026
+            </p>
+            <p><strong>IIT Jodhpur, Rajasthan</strong></p>
+            <p>Researching Queue-and-Latency-Aware scheduling for URLLC flows in 5G Advanced networks under faculty supervision.</p>
+          </div>
+
+          <div class="card">
+            <i>🔬</i>
+            <h3>Teaching Assistant</h3>
+            <p style="font-size:0.78rem; color: var(--accent); font-weight:600; margin-bottom:0.4rem;">
+              January 2025 – April 2026
+            </p>
+            <p><strong>IIT Jodhpur, Rajasthan</strong></p>
+            <p>Assisting in undergraduate courses and conducting lab sessions for students.</p>
+          </div>
+
+          <div class="card">
+            <i>📱</i>
+            <h3>Android App Intern</h3>
+            <p style="font-size:0.78rem; color: var(--accent); font-weight:600; margin-bottom:0.4rem;">
+              1st July 2022 – 14th August 2022
+            </p>
+            <p><strong>Gustovalley Technovations</strong></p>
+            <p>Worked on Android mobility solutions, contributing to app development and testing workflows.</p>
+          </div>
+
+          <div class="card">
+            <i>🏭</i>
+            <h3>Industry 4.0 Intern</h3>
+            <p style="font-size:0.78rem; color: var(--accent); font-weight:600; margin-bottom:0.4rem;">
+              1st July 2022 – 1st August 2022
+            </p>
+            <p><strong>Gustovalley Technovations</strong></p>
+            <p>Explored Industry 4.0 concepts including IoT integration and automation in industrial settings.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="section-divider" />
+
+      <!-- Certifications -->
       <section id="certifications" class="section">
-        <h2>Certifications</h2>
+        <p class="section-label">Certifications & Training</p>
+        <h2>Credentials</h2>
         <div class="certifications-cards">
           <div class="card">
-            <h3>NPTEL Online Certification</h3>
-            <p>Optical Wireless Communications for Beyond 5G Networks and IoT,</p>
-            <p>by</p>
-            <p><strong>Indraprastha Institute of Information Technology (IIIT), Delhi</strong></p>
+            <span class="cert-type">NPTEL</span>
+            <h3>Optical Wireless Communications for Beyond 5G Networks and IoT</h3>
+            <p><strong>IIIT Delhi</strong></p>
           </div>
           <div class="card">
-            <h3>NPTEL Online Certification</h3>
-            <p>Introduction to Semiconductor Devices,</p>
-            <p>by</p>
-            <p><strong>Indian Institute of Technology (IIT), Hyderabad</strong></p>
+            <span class="cert-type">NPTEL</span>
+            <h3>Introduction to Semiconductor Devices</h3>
+            <p><strong>IIT Hyderabad</strong></p>
           </div>
           <div class="card">
-            <h3>WISSENAIRE'20 WORKSHOP</h3>
-            <p>Machine Learning with Python,</p>
-            <p>by</p>
-            <p><strong>Indian Institute of Technology (IIT), Bhubaneswar</strong></p>
+            <span class="cert-type">Workshop</span>
+            <h3>Machine Learning with Python</h3>
+            <p>WISSENAIRE'20 — <strong>IIT Bhubaneswar</strong></p>
           </div>
           <div class="card">
-            <h3>INTERNSHIP</h3>
-            <p>Android App Mobility Solutions,</p>
-            <p>by</p>
+            <span class="cert-type">Internship</span>
+            <h3>Android App Mobility Solutions</h3>
             <p><strong>Gustovalley Technovations</strong></p>
           </div>
           <div class="card">
-            <h3>INTERNSHIP</h3>
-            <p>Industry 4.0,</p>
-            <p>by</p>
+            <span class="cert-type">Internship</span>
+            <h3>Industry 4.0</h3>
             <p><strong>Gustovalley Technovations</strong></p>
           </div>
         </div>
       </section>
 
+      <hr class="section-divider" />
+
+      <!-- Projects -->
       <section id="projects" class="section">
-        <h2>Projects</h2>
+        <p class="section-label">Projects</p>
+        <h2>What I've Built</h2>
         <div class="project-grid">
           <div class="project-card">
-            <h3>Resource Allocation for Guaranteed QoS (M.Tech Thesis)</h3>
+            <h3>Resource Allocation for Guaranteed QoS</h3>
+            <p style="font-size:0.78rem; color: var(--accent); font-weight:600; margin-bottom:0.5rem;">M.Tech Thesis</p>
             <p>Developed a Queue-and-Latency-Aware scheduling strategy for low-latency QoS flows in 5G and beyond networks.</p>
           </div>
           <div class="project-card">
             <h3>Channel Estimation using ML Models</h3>
-            <p>Channel estimation in wireless communication using ML models (KNN, Decision Tree, Neural Network and Linear Regression.</p>
+            <p>Channel estimation in wireless communication using KNN, Decision Tree, Neural Network, and Linear Regression models.</p>
           </div>
-          <!-- <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>A responsive portfolio showcasing my projects and skills.</p>
-          </div> -->
           <div class="project-card">
-            <h3>Developed 5G Guaranteed QoS Scheduler</h3>
-            <p>Built URLLC guaranteed scheduler for 5G Advanced using python and MATLAB.</p>
+            <h3>5G Guaranteed QoS Scheduler</h3>
+            <p>Built a URLLC guaranteed scheduler for 5G Advanced using Python and MATLAB.</p>
           </div>
           <div class="project-card">
             <h3>Vehicle Security System using Cloud Services</h3>
-            <p><i>B.Tech Final Year Project,</i></p>
-            <p>Built a hardware and software based security system using arduino for the vehicles.</p>
+            <p style="font-size:0.78rem; color: var(--accent); font-weight:600; margin-bottom:0.5rem;">B.Tech Final Year Project</p>
+            <p>Hardware and software-based vehicle security system using Arduino and cloud services.</p>
           </div>
           <div class="project-card">
-            <h3><a href="https://github.com/ProjectBlaze" target="_blank">Project Blaze</a></h3>
-            <p>Built an aftermarket opensource operating system using Google's Android Open Source Project (AOSP).</p>
+            <h3><a href="https://github.com/ProjectBlaze" target="_blank">Project Blaze ↗</a></h3>
+            <p>Built an aftermarket open-source Android OS based on Google's Android Open Source Project (AOSP).</p>
           </div>
         </div>
       </section>
 
+      <hr class="section-divider" />
+
+      <!-- Skills -->
       <section id="skills" class="section">
-        <h2>Skills & Tools</h2>
-        <ul class="skills-list">
-          <li>HTML</li>
-          <li>Git</li>
-          <li>Linux</li>
-          <li>Python</li>
-          <li>Jenkins</li>
-          <li>C++</li>
-          <li>GCP</li>
-          <li>AWS</li>
-          <li>Azure</li>
-          <li>MATLAB</li>
-          <li>Keil uVision</li>
-          <li>Arduino</li>
-          <li>OpenAirInterface (OAI)</li>
-          <li>Still Learning :)</li>
-        </ul>
+        <p class="section-label">Skills & Tools</p>
+        <h2>Tech Stack</h2>
+        <div class="skills-grid">
+          <div class="skill-pill highlight">Python</div>
+          <div class="skill-pill highlight">MATLAB</div>
+          <div class="skill-pill highlight">C++</div>
+          <div class="skill-pill">HTML / CSS</div>
+          <div class="skill-pill">Git</div>
+          <div class="skill-pill">Linux</div>
+          <div class="skill-pill">Jenkins</div>
+          <div class="skill-pill highlight">AWS</div>
+          <div class="skill-pill">GCP</div>
+          <div class="skill-pill">Azure</div>
+          <div class="skill-pill">Keil uVision</div>
+          <div class="skill-pill">Arduino</div>
+          <div class="skill-pill">OpenAirInterface</div>
+          <div class="skill-pill">Still Learning 🙂</div>
+        </div>
       </section>
 
+      <hr class="section-divider" />
+
+      <!-- Contact -->
       <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me for collaborations, inquiries, or just a friendly chat!</p>
+        <p class="section-label">Contact</p>
+        <h2>Get in Touch</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Open to collaborations, research discussions, or just a friendly chat.</p>
         <div class="contact-details">
           <div class="contact-item">
+            <div class="contact-icon">✉️</div>
             <h3>Email</h3>
-            <p><a href="mailto:m24eei019@iitj.ac.in">Aditya Pratap Singh</a></p>
+            <a href="mailto:m24eei019@iitj.ac.in">m24eei019@iitj.ac.in</a>
           </div>
           <div class="contact-item">
+            <div class="contact-icon">💼</div>
             <h3>LinkedIn</h3>
-            <p><a href="https://www.linkedin.com/in/singhapratapaditya/" target="_blank">linkedin.com/in/singhpratapaditya</a></p>
+            <a href="https://www.linkedin.com/in/singhapratapaditya/" target="_blank">singhpratapaditya</a>
           </div>
           <div class="contact-item">
+            <div class="contact-icon">🐙</div>
             <h3>GitHub</h3>
-            <p><a href="https://github.com/afterallafk" target="_blank">github.com/afterallafk</a></p>
+            <a href="https://github.com/afterallafk" target="_blank">afterallafk</a>
           </div>
         </div>
       </section>
+
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-      <p>&copy; Made with &#10084; by Aditya Pratap Singh. All rights reserved.</p>
+      <p>Designed & Developed by Aditya | © 2026</p>
     </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">↑</button>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
